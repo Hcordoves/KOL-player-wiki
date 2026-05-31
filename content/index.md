@@ -43,7 +43,7 @@ Three major powers shape the political landscape of the North right now:
 | Character | Player | Class |
 |-----------|--------|-------|
 | [Amaris Vendanii](Party-Roster) | Kaylee | Paladin (Helm) |
-| [Dorroth of Catalonia — DOC](Party-Roster) | Kerry | Paladin (Zorquan) |
+| [Dorroth of Catalonia — DOC](Party-Roster) | Strangeway | Paladin (Zorquan) |
 | [Meranir](Party-Roster) | Erin | Bard |
 | [Malrus Grygarn](Party-Roster) | Jason | TBD |
 | [Jiang Silvermark](Party-Roster) | Yad | TBD |
@@ -67,6 +67,16 @@ People the party has encountered or should know about:
 ---
 
 ## 📍 Key Locations
+
+### 📸 Current Location
+
+![High Forest](/KOL-player-wiki/current-location.jpeg)
+
+*Currently: The High Forest — Chapter 3*
+
+> To update this each session: replace `current-location.jpeg` in the repo's `content/` folder with a new image, and update the location name above.
+>
+> 
 
 🗺️ [Interactive World Map](Map) — see where everything is.
 
