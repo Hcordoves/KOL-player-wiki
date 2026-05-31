@@ -4,6 +4,7 @@ publish: true
 ---
 
 # Waterdeep
+![banner](banner.png)
 
 **Region:** Sword Coast North
 **Status:** Active
