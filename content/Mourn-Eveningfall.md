@@ -5,6 +5,8 @@ publish: true
 
 # Mourn Eveningfall
 
+![Mourn Eveningfall](Mourn%20Eveningfall.jpeg)
+
 **Race/Class:** High Elf / Paladin
 **Faction:** Lord's Alliance — founder of the Knights of Legend
 **Status:** Alive — gravely wounded; recovering in Silverymoon
@@ -30,5 +32,5 @@ To retire. To settle in Silverymoon with Alustriel, raise a family, and hand the
 
 ## Notable Facts
 - Named Knight of ALL Realms — an honor given to almost no one
-- His Moonblade *Malevolent Defender* is a legendary weapon — and it hates its name
-- Co-founded the Knights of Legend with Taeghen Moondown
+- - His Moonblade *Malevolent Defender* is a legendary weapon — and it hates its name
+  - - Co-founded the Knights of Legend with Taeghen Moondown
