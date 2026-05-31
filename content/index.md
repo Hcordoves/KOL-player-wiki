@@ -70,7 +70,7 @@ People the party has encountered or should know about:
 
 ### 📸 Current Location
 
-![High Forest](/KOL-player-wiki/current-location.jpeg)
+![High Forest](/KOL-player-wiki/static/current-location.jpeg)
 
 *Currently: The High Forest — Chapter 3*
 
