@@ -5,8 +5,10 @@ publish: true
 
 # Valas Halfinas
 
+![Valas Halfinas](Valas%20Halfinas.jpeg)
+
 **Race/Class:** Fallen Aasimar / Vampire Lord
-**Faction:** [Spree Alliance](../Factions/Spree-Alliance)
+**Faction:** Spree Alliance
 **Status:** Alive
 **Relationship:** Hostile
 
