@@ -1,3 +1,290 @@
-@use "./variables.scss" as *;
+/* ============================================
+   TALE OF THE UNNAMED HEROES — QUARTZ THEME
+   Dark Fantasy | Gold Accents | 1508 DR
+   ============================================ */
 
-// put your custom CSS here!
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel+Decorative:wght@400;700&display=swap');
+
+/* --- Color Overrides --- */
+:root {
+  --secondary: #c9a84c;
+  --tertiary: #e8c96a;
+  --highlight: rgba(201, 168, 76, 0.12);
+  --light: #0f0f0f;
+  --lightgray: #1e1a14;
+  --gray: #6b5c3a;
+  --darkgray: #d4c4a0;
+  --dark: #f0e6cc;
+}
+
+/* --- Base Typography --- */
+body {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background-color: #0f0f0f;
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(201, 168, 76, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(201, 168, 76, 0.02) 0%, transparent 50%);
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4, h5, h6,
+.page-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e8c96a;
+  text-shadow: 0 0 30px rgba(201, 168, 76, 0.3);
+  border-bottom: 1px solid #3a2e18;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #c9a84c;
+  margin-top: 2.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #2a2016;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #b8963e;
+  font-style: italic;
+}
+
+/* --- Page Title --- */
+.page-title {
+  font-family: 'Cinzel Decorative', serif !important;
+  font-size: 1.8rem !important;
+  color: #e8c96a !important;
+  letter-spacing: 0.08em;
+}
+
+/* --- Links --- */
+a {
+  color: #c9a84c;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+  color: #e8c96a;
+  text-shadow: 0 0 12px rgba(232, 201, 106, 0.4);
+}
+
+/* Internal wiki links */
+a.internal {
+  color: #c9a84c;
+  border-bottom: 1px dotted rgba(201, 168, 76, 0.4);
+}
+
+a.internal:hover {
+  color: #e8c96a;
+  border-bottom-color: #e8c96a;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  background: #13100a;
+  border: 1px solid #3a2e18;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+thead {
+  background: #1e1810;
+  border-bottom: 2px solid #c9a84c;
+}
+
+th {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c9a84c;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 0.55rem 1rem;
+  color: #d4c4a0;
+  border-bottom: 1px solid #2a2016;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: rgba(201, 168, 76, 0.05);
+}
+
+/* --- Blockquotes --- */
+blockquote {
+  border-left: 3px solid #c9a84c;
+  background: #13100a;
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  color: #c4b48a;
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+}
+
+/* --- Horizontal Rules --- */
+hr {
+  border: none;
+  border-top: 1px solid #3a2e18;
+  margin: 2rem 0;
+  position: relative;
+}
+
+hr::after {
+  content: '⚔';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #0f0f0f;
+  color: #c9a84c;
+  padding: 0 0.8rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* --- Sidebar --- */
+#quartz-body .sidebar {
+  background: #0c0c0c;
+  border-right: 1px solid #2a2016;
+}
+
+.sidebar-header {
+  border-bottom: 1px solid #2a2016;
+}
+
+/* Explorer (file tree) */
+.folder-title, .file-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+}
+
+/* --- Search --- */
+#search-container input {
+  background: #1e1a14;
+  border: 1px solid #3a2e18;
+  color: #d4c4a0;
+  font-family: 'Crimson Text', serif;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+#search-container input:focus {
+  border-color: #c9a84c;
+  outline: none;
+  box-shadow: 0 0 8px rgba(201, 168, 76, 0.2);
+}
+
+/* --- Article Content --- */
+article {
+  max-width: 780px;
+}
+
+article p {
+  color: #d0c0a0;
+}
+
+article strong {
+  color: #e0d0b0;
+  font-weight: 600;
+}
+
+article em {
+  color: #c4b48a;
+}
+
+/* --- Tags --- */
+.tags li a {
+  background: #1e1810;
+  border: 1px solid #3a2e18;
+  color: #c9a84c;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem;
+  transition: all 0.2s;
+}
+
+.tags li a:hover {
+  background: #2a2016;
+  border-color: #c9a84c;
+  color: #e8c96a;
+}
+
+/* --- Graph --- */
+.graph canvas {
+  border-radius: 8px;
+}
+
+/* --- Table of Contents --- */
+#toc a {
+  color: #b8a070;
+  font-size: 0.9rem;
+}
+
+#toc a:hover {
+  color: #e8c96a;
+}
+
+#toc a.in-view {
+  color: #c9a84c;
+}
+
+/* --- Callouts / Admonitions --- */
+.callout {
+  border-radius: 4px;
+  border-left-width: 3px;
+}
+
+/* --- Code --- */
+code {
+  background: #1e1810;
+  border: 1px solid #2a2016;
+  color: #c9a84c;
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+  font-size: 0.9em;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a2e18;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a84c;
+}
