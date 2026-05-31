@@ -16,7 +16,7 @@
   var imgW = 2048, imgH = 1448;
   var map = L.map('map', { crs: L.CRS.Simple, minZoom: -2, maxZoom: 2, zoomSnap: 0.5, attributionControl: false });
   var bounds = [[0,0],[imgH,imgW]];
-  L.imageOverlay('/KOL-player-wiki/Map%20of%20Faerun.jpeg', bounds).addTo(map);
+  L.imageOverlay('/KOL-player-wiki/static/Map%20of%20Faerun.jpeg', bounds).addTo(map);
   map.fitBounds(bounds);
   function dot(c) {
     return L.divIcon({ className: '', html: '<div style="width:13px;height:13px;border-radius:50%;background:'+c+';border:2px solid #fff;box-shadow:0 0 5px rgba(0,0,0,.7);"></div>', iconAnchor:[6,6], popupAnchor:[0,-10] });
@@ -34,11 +34,3 @@
   var legend = L.control({position:'bottomright'});
   legend.onAdd = function() {
     var d = L.DomUtil.create('div');
-    d.style.cssText = 'background:rgba(17,16,9,.9);padding:8px 12px;border-radius:6px;border:1px solid #b8973d;font-size:.8em;color:#ddd;line-height:1.9;font-family:sans-serif;';
-    d.innerHTML = '<strong style="color:#b8973d;">Factions</strong><br><span style="color:#4a8fd4;">&#9679;</span> Lord\'s Alliance<br><span style="color:#5cb85c;">&#9679;</span> Fey Alliance<br><span style="color:#f0ad4e;">&#9679;</span> Active Arc';
-    return d;
-  };
-  legend.addTo(map);
-</script>
-</body>
-</html>
