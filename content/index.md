@@ -5,13 +5,13 @@ publish: true
 
 # ⚔️ Tale of the Unnamed Heroes — Player Wiki
 
-![banner](Battle%20of%20the%20Gods%20Banner.webp)
+![banner](banner.png)
 
 *This wiki contains what your characters know. No spoilers. No DM secrets. Just the world as your party has experienced it.*
 
 ---
 
-## 📍 Where We Are
+## 📍 Where We Areh
 
 > **Chapter 4 — High Forest Arc**
 > > **Year:** 1508 DR
