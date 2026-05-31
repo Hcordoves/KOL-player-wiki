@@ -4,6 +4,7 @@ publish: true
 ---
 
 # Yartar
+![banner](banner.png)
 
 **Region:** Dessarin Valley, Savage Frontier
 **Status:** Rebuilding after the Battle of Yartar
