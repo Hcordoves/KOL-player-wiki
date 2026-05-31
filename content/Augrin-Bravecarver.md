@@ -5,6 +5,8 @@ publish: true
 
 # Augrin Bravecarver
 
+![Augrin Bravecarver](Augrin%20Bravecarver.jpeg)
+
 **Race/Class:** Minotaur / Barbarian
 **Faction:** Knights of Legend
 **Status:** Missing — High Forest
