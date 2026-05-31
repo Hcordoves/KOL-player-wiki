@@ -9,7 +9,7 @@ An interactive map of the Sword Coast and the North — locations the party has 
 
 > *The Forgotten Realms, 1508 DR.*
 
-<iframe src="/KOL-player-wiki/map-embed.html" style="width:100%;height:580px;border-radius:8px;border:1px solid #b8973d;margin:1.5rem 0;" frameborder="0"></iframe>
+<iframe src="/KOL-player-wiki/static/map-embed.html" style="width:100%;height:580px;border-radius:8px;border:1px solid #b8973d;margin:1.5rem 0;" frameborder="0"></iframe>
 
 ---
 
