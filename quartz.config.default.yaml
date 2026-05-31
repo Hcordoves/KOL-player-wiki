@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: Tale of the Unnamed Heroes
+  pageTitleSuffix: " | 1508 DR"
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: quartz.jzhao.xyz
+  baseUrl: hcordoves.github.io/KOL-player-wiki
   ignorePatterns:
     - private
     - templates
@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Cinzel
+      body: Crimson Text
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -26,20 +26,20 @@ configuration:
         gray: "#b8b8b8"
         darkgray: "#4e4e4e"
         dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
+        secondary: "#8b6914"
+        tertiary: "#a07820"
+        highlight: rgba(139, 105, 20, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#0f0f0f"
+        lightgray: "#1e1a14"
+        gray: "#6b5c3a"
+        darkgray: "#d4c4a0"
+        dark: "#f0e6cc"
+        secondary: "#c9a84c"
+        tertiary: "#e8c96a"
+        highlight: rgba(201, 168, 76, 0.12)
+        textHighlight: "#c9a84c44"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -196,8 +196,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        "⚔ Knights of Legend": https://knightsoflegend.obsidianportal.com
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
