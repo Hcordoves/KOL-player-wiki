@@ -9,36 +9,71 @@
      --gray:          #b8b8b8;
      --darkgray:      #4e4e4e;
      --dark:          #2b2b2b;
-     --secondary:     #8b6914;
-     --tertiary:      #a07820;
-     --highlight:     rgba(139, 105, 20, 0.15);
+     --secondary:     #7a5c10;
+     --tertiary:      #8f6e14;
+     --highlight:     rgba(122, 92, 16, 0.12);
      --textHighlight: #fff23688;
 }
 
 /* --- Color overrides (dark mode) --- */
 :root[saved-theme=dark] {
-     --light:         #0f0f0f;
+     --light:         #111009;
      --lightgray:     #1e1a14;
      --gray:          #6b5c3a;
-     --darkgray:      #d4c4a0;
-     --dark:          #f0e6cc;
-     --secondary:     #c9a84c;
-     --tertiary:      #e8c96a;
-     --highlight:     rgba(201, 168, 76, 0.12);
-     --textHighlight: #c9a84c44;
+     --darkgray:      #c8b890;
+     --dark:          #e8dcc0;
+     --secondary:     #b8973d;
+     --tertiary:      #d4ae50;
+     --highlight:     rgba(184, 151, 61, 0.10);
+     --textHighlight: #b8973d44;
 }
 
-body { font-size: 1.05rem; line-height: 1.75; }
+/* --- Background subtle vignette --- */
+body {
+     font-size: 1.05rem;
+     line-height: 1.75;
+     background-image:
+            radial-gradient(ellipse at 20% 0%, rgba(184,151,61,0.04) 0%, transparent 60%),
+            radial-gradient(ellipse at 80% 100%, rgba(184,151,61,0.03) 0%, transparent 60%);
+}
 
+/* --- Banner images (alt="banner") — full width --- */
+img[alt="banner"] {
+     float: none !important;
+     max-width: 100% !important;
+     width: 100%;
+     max-height: 300px;
+     object-fit: cover;
+     object-position: center 30%;
+     margin: 0 0 2rem 0 !important;
+     border-radius: 6px;
+     border: 1px solid var(--lightgray);
+     box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+/* --- NPC portraits — float right --- */
+article img:not([alt="banner"]) {
+     float: right;
+     max-width: 240px;
+     width: 100%;
+     margin: 0 0 1.2rem 1.8rem;
+     border: 2px solid var(--secondary);
+     border-radius: 6px;
+     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+     clear: right;
+}
+
+/* --- H1 --- */
 article > h1, .page h1 {
      font-size: 2.1rem !important;
      color: var(--tertiary) !important;
-     text-shadow: 0 0 24px rgba(232, 201, 106, 0.25);
+     text-shadow: 0 0 20px rgba(212, 174, 80, 0.15);
      border-bottom: 1px solid var(--lightgray);
      padding-bottom: 0.5rem;
      margin-bottom: 1.5rem;
 }
 
+/* --- H2 --- */
 article h2 {
      color: var(--secondary) !important;
      border-bottom: 1px solid var(--lightgray);
@@ -71,7 +106,7 @@ hr::after {
      color: var(--secondary);
      padding: 0 0.8rem;
      font-size: 0.85rem;
-     opacity: 0.8;
+     opacity: 0.7;
 }
 
 .table-container > table { border: 1px solid var(--lightgray); border-radius: 4px; overflow: hidden; }
@@ -81,7 +116,7 @@ tr:hover td { background: color-mix(in srgb, var(--secondary) 5%, transparent); 
 a.internal { border-radius: 3px; padding: 0 0.15rem; transition: color 0.2s, background-color 0.2s; }
 
 #search-bar:focus, input[type="search"]:focus {
-     box-shadow: 0 0 8px color-mix(in srgb, var(--secondary) 40%, transparent);
+     box-shadow: 0 0 8px color-mix(in srgb, var(--secondary) 35%, transparent);
      border-color: var(--secondary) !important;
      outline: none;
 }
@@ -101,3 +136,5 @@ a.internal { border-radius: 3px; padding: 0 0.15rem; transition: color 0.2s, bac
 }
 
 .tags > ul > li > a { font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 3px; }
+
+article::after { content: ''; display: block; clear: both; }
