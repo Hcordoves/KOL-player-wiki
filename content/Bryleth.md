@@ -5,8 +5,10 @@ publish: true
 
 # Bryleth
 
+![Bryleth](Bryleth%20the%20Southwood%20Witch.jpeg)
+
 **Race/Class:** Fierna Tiefling / Druid
-**Faction:** [Spree Alliance](../Factions/Spree-Alliance)
+**Faction:** Spree Alliance
 **Status:** Alive — active in the High Forest
 **Relationship:** Hostile
 
