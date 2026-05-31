@@ -4,6 +4,7 @@ publish: true
 ---
 
 # Silverymoon
+![banner](banner.png)
 
 **Region:** Luruar, Northwest Faerûn
 **Status:** Partially destroyed — Fey Alliance occupied
