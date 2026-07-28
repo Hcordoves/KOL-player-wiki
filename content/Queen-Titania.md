@@ -5,6 +5,8 @@ publish: true
 
 # Queen Titania
 
+![Queen Titania](Queen%20Titania.jpg)
+
 **Race/Class:** Archfey
 **Faction:** [Fey Alliance](../Factions/Fey-Alliance)
 **Status:** Alive — present in Silverymoon

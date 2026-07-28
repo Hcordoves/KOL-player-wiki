@@ -5,6 +5,8 @@ publish: true
 
 # King Oberon
 
+![King Oberon](King%20Oberon.jpg)
+
 **Race/Class:** Archfey
 **Faction:** [Fey Alliance](../Factions/Fey-Alliance)
 **Status:** Alive — rules Silverymoon's North Bank
